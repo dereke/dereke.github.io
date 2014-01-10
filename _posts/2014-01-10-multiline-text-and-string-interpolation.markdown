@@ -83,7 +83,7 @@ JavaScript doesn't support any kind of advanced string handling (as of ECMAScrip
 
 So far I think ruby is doing the best job here. Multiline strings and interpolation.
 
-The only better implementation I have seen is in [pogoscript](http://www.pogoscript.org)
+The only better implementation I have seen is in [PogoScript](http://pogoscript.org)
 
 {% highlight javascript %}
 additional text = "another line"
