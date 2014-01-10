@@ -17,9 +17,11 @@ While perusing some c# today (not for pleasure I might add) I noticed some prett
 
 Not only is this syntax hard to read it also outputs the following:
 
+*I've replaced indentation with a `-` so you can actually see the indents*
+
     some text
-                    another line
-                    and some more text
+    ----------------another line
+    ----------------and some more text
 
 This could of course be rewritten to:
 
@@ -48,9 +50,9 @@ Lets try this in ruby:
 
 This will output the following:
 
-      some text
-      another line
-      and some more text
+    --some text
+    --another line
+    --and some more text
 
 Again the text is indented but at least it is consistently indented. Of course if we didn't want any indent we would have to change how we write it:
 
@@ -72,7 +74,7 @@ Ok just for laughs lets look at how this is usually done in JavaScript:
             "and some more text"].join("\n");
 {% endhighlight %}
 
-JavaScript doesn't support any kind of advanced string handling (as of ECMAScript 5 version 6 supports Multi-line strings and Interpolation!) so to make it readable we have to handle it using the array syntax.
+JavaScript doesn't support any kind of advanced string handling (as of ECMAScript 5 version 6 supports Multi-line strings and Interpolation!) so to make it readable we have to handle it using the array syntax. At least this outputs without any extra indentation.
 
 *Note you can achieve multi line strings in JavaScript using the escape character to escape the line breaks
  This shouldn't be used for three reasons:*
@@ -81,7 +83,7 @@ JavaScript doesn't support any kind of advanced string handling (as of ECMAScrip
  2. It can break minifiers
  3. And in our case we loose the line breaks which we actually want!
 
-So far I think ruby is doing the best job here. Multiline strings and interpolation.
+So far I think ruby is doing the best job here.
 
 The only better implementation I have seen is in [PogoScript](http://pogoscript.org)
 
