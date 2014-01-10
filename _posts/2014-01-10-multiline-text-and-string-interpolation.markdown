@@ -74,12 +74,12 @@ Ok just for laughs lets look at how this is usually done in JavaScript:
 
 JavaScript doesn't support any kind of advanced string handling (as of ECMAScript 5 version 6 supports Multi-line strings and Interpolation!) so to make it readable we have to handle it using the array syntax.
 
-> Note you can achieve multi line strings in JavaScript using the escape character to escape the line breaks
-> This shouldn't be used for three reasons.
->
-> 1. It is not supported on all run times
-> 2. It can break minifiers
-> 3. And in our case we loose the line breaks which we atually want!
+*Note you can achieve multi line strings in JavaScript using the escape character to escape the line breaks
+ This shouldn't be used for three reasons:*
+
+ 1. It is not supported on all run times
+ 2. It can break minifiers
+ 3. And in our case we loose the line breaks which we actually want!
 
 So far I think ruby is doing the best job here. Multiline strings and interpolation.
 
